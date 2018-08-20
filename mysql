@@ -1,0 +1,10 @@
+sudo apt-get install mysql-server mysql-client libmysqlclient-dev#安装mysql
+mysql -u root -p #root用户密码登录
+最好是建立一个专门操作数据库的账户，比如treenewbee
+CREATE USER 'treenewbee'@'localhost' IDENTIFIED BY 'passwd';
+然后再对这个应用创建自己的数据库
+CREATE DATABASE lmzdx;
+给权限
+GRANT ALL PRIVILEGES ON  lmzdx.* TO 'treenewbee'@'localhost' IDENTIFIED BY "GoBelieve";
+刷新权限
+flush privileges;

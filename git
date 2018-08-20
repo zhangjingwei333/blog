@@ -1,0 +1,22 @@
+1.push
+…or create a new repository on the command line
+
+echo "# blog" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:zhangjingwei127/blog.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:zhangjingwei127/blog.git
+git push -u origin master
+
+2.config
+git config --global color.ui true
+git config --global user.name "zhangjingwei127"
+git config --global user.email "2748759447@qq.com"
+
+ssh-keygen -t rsa -b 4096 -C "2748749447@qq.com" #得到密钥
+ssh -T git@github.com #测试连成功没

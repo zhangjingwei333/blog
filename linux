@@ -1,0 +1,67 @@
+shutdown -h +20(20minute later)/20:00/now
+reboot -r +20(20minute later)/20:00/now
+cd . 
+cd ..
+ls
+ls -a
+ls -l
+cal #看日历
+cal 10 2020
+cal 2020 #看全年的
+clear
+bc #计算器
+date显示时间
+date --help
+man date
+sync #同步
+文件权限
+Owner/Group/Others
+d #文件夹（目录）
+- #普通文件
+l #link（快捷方式）
+b #U盘（接口）
+c #(键盘，鼠标）
+
+chgrp #change group;/etc/group
+chown #change owner;
+chmod
+r (read) 4
+w (write) 2
+x (excute) 1
+rwx
+chgrp root test.c #把test.c改为root组
+chmod 764 test.c  #Owner拥有读写执行 权，Group拥有读写权，Others拥有读权
+
+cat （满屏显）tac (反过来显示）
+more (分屏向下）
+less (更好点，可向上向下）
+nl filename #显示行数
+head filename #默认头10行
+tail filename #默认尾10行
+wc -l filename #直接出多少行
+wc filename #查看字符
+od 查看二进制文件
+
+df -i filename #看inode号，重名后inode号不变，碰到删不掉的文件可以
+删它的inode号
+
+压缩文件
+tar -jc namefile
+*.tar圧成的包      *.解压后
+*.tar.gz             *.gz
+*.tar.bz2            *.bz.2
+*.tar.xz             *.xz
+tar -jxvf chinadns.tar.bz2 chinadns
+第一个参数 
+-z:gzip(用gzip压缩）
+-j:bzip
+-J:xz
+第二个参数
+-c  代表 压缩
+-x      解压
+-t      查看
+第三个参数
+-v  信息
+第四个参数
+-f 指定文件名字（最好放在最后一个参数）
+
