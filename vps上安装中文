@@ -1,0 +1,28 @@
+
+
+查看系统支持的语言包
+
+locale -a
+
+
+    如果没有中文语言包，可搜索源中支持的中文包
+
+    apt-cache search language-pack-zh # 根据搜索的情况安装
+
+    sudo apt-get install language-pack-zh-hans # 安装
+
+
+                使用 locale -a 可以看到已经支持中文 zh_CN.utf8
+
+                编辑语言文件
+
+                sudo vim /etc/default/locale
+
+                # vim /etc/default/locale 输入以下内容
+                LANG="en_US.UTF-8"
+                LANGUAGE="zh_CN.utf8"
+                LC_ALL="zh_CN.utf8"
+
+
+                                        DONE
+之后重启机器
