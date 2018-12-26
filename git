@@ -2,8 +2,8 @@
 …or create a new repository on the command line
 
 echo "# blog" >> README.md
-git init
-git add README.md
+git init//or git init blog
+git add README.md// git add . （添加所有文件）
 git commit -m "first commit"
 git remote add origin git@github.com:zhangjinwei33/blog.git
 git push -u origin master
@@ -18,5 +18,23 @@ git config --global color.ui true
 git config --global user.name "zhangjingwei33"
 git config --global user.email "zhangjingwei33@gmail.com"
 
-ssh-keygen -t rsa -b 4096 -C "2748749447@qq.com" #得到密钥
+ssh-keygen -t rsa -b 4096 -C "zhangjingwei33@gmail.com" #得到密钥
 ssh -T git@github.com #测试连成功没
+
+3.常用命令
+git status //看状态
+git log --oneline//线性看日志
+git log --graph//分支图型看日志
+git reset --hard HEAD//回到从前
+git reset --hard HEAD~n //回到前几个
+git reset --hard 13be9a7//回到ID号时
+git reset c6762a1 --1.py //单个文件回到ID号时
+
+4.分支
+git branch branchName//建分支
+git branch //看分支
+git checkout branchName//跳转分支
+git branch -d branchName//删除分支
+在master分支上合并
+git merge --no-ff -m "keep merge info" boss development
+
