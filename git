@@ -3,8 +3,11 @@
 
 echo "# blog" >> README.md
 git init//or git init blog
-git add README.md// git add . （添加所有文件）
+git add README.md
+git add . （添加所有文件）
+git add --all(添加所有文件）
 git commit -m "first commit"
+git commit -amend //将当前修改追加到上一次commit
 git remote add origin git@github.com:zhangjinwei33/blog.git
 git push -u origin master
 
@@ -37,4 +40,5 @@ git checkout branchName//跳转分支
 git branch -d branchName//删除分支
 在master分支上合并
 git merge --no-ff -m "keep merge info" boss development
+
 
