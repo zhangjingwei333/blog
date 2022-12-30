@@ -25,6 +25,7 @@ git push -u origin master
 
 
 ssh-keygen -t rsa -b 4096 -C "zhangjingwei33@gmail.com" #得到密钥
+将生成的 id_rsa.pub 文件中的内容复制到github.com上的ssh中。
 ssh -T git@github.com #测试连成功没
 
 3.常用命令
