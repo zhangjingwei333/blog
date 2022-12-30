@@ -13,7 +13,7 @@ git add README.md
 git add . （添加所有文件）
 git add --all(添加所有文件）
 git commit -m "first commit"
-git commit -amend //将当前修改追加到上一次commit
+
 git remote add origin git@github.com:zhangjinwei33/blog.git
 git push -u origin master
 
