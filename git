@@ -1,3 +1,78 @@
+git配置
+git config --global user.email YourEmailAdress@gmail.com
+git comfig --global user.name “YourName”
+git config --global core.editor vim 	//设置用vim编辑器
+git config --global merge.tool vimdiff	//对比两次提交的不同
+
+查看git命令的帮助手册,用config命令举例
+git help config
+
+
+有项目目录时初始化为Git项目？
+git init
+
+没有项目目录初始为Git项目？
+git init ProjectName
+
+查看git 状态
+git status
+
+添加一个文件至git状态？
+git add filename
+
+添加项目下所有文件至git壮态？
+git add .
+
+git提交？
+git commit –m “提交的备注信息”
+
+创建一个名为Zjw的分支
+git branch Zjw
+
+查看都有哪些分支
+git branch
+
+跳转到Zjw分支
+git checkout –b Zjw
+
+在Zjw分支写了文件，commit
+git commit –m “备忘message…”
+
+图化看commit log
+git log --graph
+
+线化看commit log
+git log --oneline
+
+也可图线合一
+git log --oneline --graph 
+
+将Zjw分支写的代码合并到master分支
+先在master分支上，用 git branch 看当前在哪个分支上，再 
+git merge Zjw
+
+删除一个分支
+git branch –d BranchName
+
+整体回到任一次commit
+git reset --hard HEAD的ID值
+
+查看过往未来的<HEAD>ID
+git reflog
+
+单一个文件回到任一版commit中
+git checkout <HEAD>ID --fileName
+
+如何解决冲突
+将冲突文件中的冲突报错信息手改一下，例：
+<<<<<<HEAD
+# edited in master
+====
+# edited in SmallBranchName
+>>>>>> SmallBranchName
+将上面整体改为 # edited in master and SmallBranchName
+
+
 0.config
 
 git config --global color.ui true
